@@ -7,7 +7,7 @@ for (let i = 0; i < 13; i++){
 }
 
 // obtenemos números aleatorios entre 1 y 6 para cada uno de los lanzamientos de los dados (36.000 veces)
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 36000; i++) {
 
     let dado1 = Math.floor(Math.random() * 6 + 1);
     let dado2 = Math.floor(Math.random() * 6 + 1);

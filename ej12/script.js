@@ -4,7 +4,7 @@ function validarFecha() {
     let exprecionRegularFecha = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
 
     let esValidaFecha = (fecha.match(exprecionRegularFecha)) ? 'es válido' : 'no es válido';
-    console.log(`El formato de esta fecha "${fecha}" ${esValidaFecha}`);
+    console.log(`El formato de la fecha "${fecha}" ${esValidaFecha}`);
 }
 validarFecha();
 
@@ -14,7 +14,7 @@ function validarEmail() {
     let exprecionRegularEmail = /^([-.]|\w)+@([]|\w)+(\.\w{2,3})+$/;
 
     let esValidoEmail = (email.match(exprecionRegularEmail)) ? 'es válido' : 'no es válido';
-    console.log(`El formato de este email "${email}" ${esValidoEmail}`);
+    console.log(`El formato del email "${email}" ${esValidoEmail}`);
 }
 validarEmail();
 
@@ -23,25 +23,26 @@ function invertirOrdenPalabras(){
 let nombreApellido = 'John Smith';
 let exprecionRegularNombreApellido = /(\w+)\s(\w+)/;
 
-let nombreApellidoInvertido = nombreApellido.replace(exprecionRegularNombreApellido, '$2, $1')
-console.log(nombreApellidoInvertido)
+let nombreApellidoInvertido = nombreApellido.replace(exprecionRegularNombreApellido, '$2, $1');
+console.log(`El orden invertido de "${nombreApellido}" es: "${nombreApellidoInvertido}"`);
 }
 invertirOrdenPalabras();
 
 // eliminamos con la expresión regular la etiqueta <script> y todo contenido de una cadena HTML
 function eliminarEtiquetaScript() {
     mensajeEtiqueta = 'Kyiv is the capital of Freedom <script> Contenido de una cadena de HTML </script>';
-    console.log (`Mensaje con etiqueta: ${mensajeEtiqueta}`)
+    console.log (`Mensaje con etiqueta potencialmente peligrosa: ${mensajeEtiqueta}`)
     let exprecionRegularScript = /<script[\s\S]*?>[\s\S]*?<\/script>/;
 
     mensajeEtiqueta = mensajeEtiqueta.replace(exprecionRegularScript, ' ');
-    console.log(`Mensaje sin etiqueta: ${mensajeEtiqueta}`)
+    console.log(`Mensaje sin etiqueta potencialmente peligrosa: ${mensajeEtiqueta}`)
 }
 eliminarEtiquetaScript();
 
 // reemplazamos los carácteres con la expresión regular
 function escapeHTML() {
-    cadena = "Bonnie &amp; Clyde \nBonnie &lt; Clyde"; 
+    cadena = '"Bonnie &amp; Clyde" y "Bonnie &lt; Clyde"';
+    console.log(`Cadena con carácteres a reemplazar: ${cadena}`);
     let replacements = [
         ["&", /&amp;/],
         ["\/", /&quot;/],
@@ -52,6 +53,6 @@ function escapeHTML() {
         cadena = cadena.replace(x[1], x[0]);
 
     });
-    console.log(cadena);
+    console.log(`Cadena con carácteres ya reemplazados: ${cadena}`);
 }
 escapeHTML();
