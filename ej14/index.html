@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <input id="pantalla" type="text" placeholder="0" onclick="limpiarPantalla()">
+        <div>
+            <button class="boton-limpiar" id="c" onclick="limpiarPantalla()">C</button>
+        </div>
+        <div class="botones-operaciones">
+     
+            <button id="7" onclick="guardarNumero(this.id)">7</button>
+            <button id="8" onclick="guardarNumero(this.id)">8</button>
+            <button id="9" onclick="guardarNumero(this.id)">9</button>
+            <button id="/" onclick="guardarOperacion(this.id)">/</button>
+            <button id="raiz" onclick="obtenerRaizCuadrada()">Raíz</button>
+            <button id="4" onclick="guardarNumero(this.id)">4</button>
+            <button id="5" onclick="guardarNumero(this.id)">5</button>
+            <button id="6" onclick="guardarNumero(this.id)">6</button>
+            <button id="*" onclick="guardarOperacion(this.id)">*</button>
+            <button id="%" onclick="obtenerModulo()">%</button>
+            <button id="1" onclick="guardarNumero(this.id)">1</button>
+            <button id="2" onclick="guardarNumero(this.id)">2</button>
+            <button id="3" onclick="guardarNumero(this.id)">3</button>
+            <button id="-" onclick="guardarOperacion(this.id)">-</button>
+            <button id="1/x" onclick="obtenerUnoEntreX()">1/x</button>
+            <button id="0" onclick="guardarNumero(this.id)">0</button>
+            <button id="+/-" onclick="cambiarSigno()">+/-</button>
+            <button id="." onclick="agregarPunto()">.</button>
+            <button id="+" onclick="guardarOperacion(this.id)">+</button>
+            <button id="=" onclick="calcularDosOperandos()">=</button>
+            
+        </div>
+    </div>
+</body>
+</html>

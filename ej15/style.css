@@ -1,0 +1,32 @@
+.container-imagenes{
+    width: 880px;
+    height: 110px;
+    border: 3px solid lightgrey;
+    display: flex;
+    margin: auto;
+}
+
+.container-imagen{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+#imagenCentral{
+    margin-top: 100px;
+    width:600px;
+    height: 400px;
+}
+
+#textotImagen{
+    margin-top: 66%;
+    text-align: center;
+    position: absolute;
+}
+
