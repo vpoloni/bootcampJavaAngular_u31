@@ -8,7 +8,7 @@ El tema: JavaScript(II).
 
 ![image](https://user-images.githubusercontent.com/89861246/171397321-f942d18e-1107-48a7-9155-f080e68b61b0.png)
 
-![image](https://user-images.githubusercontent.com/89861246/171396050-56d523c8-ec6d-44bd-b6c8-3191716ff728.png)
+![image](https://user-images.githubusercontent.com/89861246/171398516-aea8aef0-69a5-42fe-a083-6f398f8f4995.png)
 
 ![image](https://user-images.githubusercontent.com/89861246/171396445-d5f085a2-7bf8-45cc-9dfd-71172a7df34b.png)
 
